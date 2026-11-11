@@ -1,1 +1,5 @@
 res://scenes/ball.tscn
+res://scenes/chatrachter.tscn
+res://scripts/movement.gd
+res://scenes/main.tscn
+res://scripts/move.gd
