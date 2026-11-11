@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://rtdmfhcit2cp"]
+
+[node name="Node2D" type="Node2D" unique_id=321575471]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1969986671]
