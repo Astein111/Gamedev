@@ -9,13 +9,14 @@ size = Vector2(117, 120)
 [node name="Node2D" type="Node2D" unique_id=1483076249]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1233542770]
+script = ExtResource("2_tu6s8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1560775260]
 position = Vector2(-0.5, -1)
 shape = SubResource("RectangleShape2D_3bwsy")
-script = ExtResource("2_tu6s8")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1348711728]
 texture = ExtResource("1_tu6s8")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=546996306]
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D/Sprite2D" unique_id=546996306]
+zoom = Vector2(0.5, 0.5)

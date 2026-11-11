@@ -3,19 +3,35 @@
 [ext_resource type="PackedScene" uid="uid://bbwqmhrqqunco" path="res://scenes/chatrachter.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://bj5hxch8vnoux" path="res://icon.svg" id="2_0wfyh"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_800mr"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vyyxv"]
+distance = 294.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
+size = Vector2(1983, 167)
 
 [node name="Node2D" type="Node2D" unique_id=2067744588]
 
 [node name="MC" parent="." unique_id=1588685913 instance=ExtResource("1_o5qli")]
-position = Vector2(-1, -238)
+position = Vector2(-36, -494)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=815485317]
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1130909855]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1835949916]
-shape = SubResource("WorldBoundaryShape2D_800mr")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=343589660]
+shape = SubResource("WorldBoundaryShape2D_vyyxv")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=52055008]
-position = Vector2(138.5, 69)
-scale = Vector2(7.8671875, 1)
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2/CollisionShape2D2" unique_id=857710399]
+position = Vector2(3, -235)
+scale = Vector2(23.343752, 1)
+texture = ExtResource("2_0wfyh")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="CharacterBody2D2" unique_id=407757628]
+position = Vector2(-458, -213)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/CharacterBody2D" unique_id=802455166]
+position = Vector2(420, -607)
+shape = SubResource("RectangleShape2D_0wfyh")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2/CharacterBody2D/CollisionShape2D" unique_id=134226631]
+position = Vector2(-3.5, 26.5)
+scale = Vector2(15.484375, 1)
 texture = ExtResource("2_0wfyh")
