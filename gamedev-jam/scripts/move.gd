@@ -15,9 +15,10 @@ signal gravity_switched(new_gravity_dir: float)
 @export var show_aim_line: bool = true
 
 @onready var sprite: Sprite2D = get_node_or_null("Sprite2D") as Sprite2D
+@onready var anim_player: AnimationPlayer = get_node_or_null("AnimationPlayer") as AnimationPlayer
 
 var facing_dir: float = 1.0
-var gravity_dir: float = 1.0 # 1.0 = normal (down), -1.0 = inverted (ceiling)
+var gravity_dir: float = 1.0 
 var aim_dir: Vector2 = Vector2.RIGHT
 var _restart_timer: float = 0.0
 
@@ -26,23 +27,18 @@ func _physics_process(delta: float) -> void:
 	if _handle_restart(delta):
 		return
 
-	# Gravity switch + parallel teleport to ceiling/floor
 	if InputMap.has_action("GravitySwitch") and Input.is_action_just_pressed("GravitySwitch"):
 		_switch_gravity()
 
-	# Apply gravity in current direction
 	if not is_on_floor():
 		velocity.y += gravity * gravity_dir * delta
 
-	# Start jump away from current floor/ceiling
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jump_velocity * gravity_dir
 
-	# Cut jump short if Jump is released early
 	if Input.is_action_just_released("Jump") and (velocity.y * gravity_dir) < 0.0:
 		velocity.y *= jump_cut
 
-	# Start at start_speed and reach max_speed in time_to_max_speed seconds
 	var direction: float = Input.get_axis("Left", "Right")
 	if direction != 0.0:
 		facing_dir = signf(direction)
@@ -58,6 +54,15 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, direction * max_speed, accel * delta)
 	else:
 		velocity.x = 0.0
+
+	# Управление на анимациите
+	if anim_player:
+		if not is_on_floor():
+			anim_player.play("jump")
+		elif direction != 0.0:
+			anim_player.play("run")
+		else:
+			anim_player.play("idle")
 
 	aim_dir = _get_aim_direction()
 	queue_redraw()
