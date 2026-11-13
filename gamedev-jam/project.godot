@@ -13,16 +13,12 @@ config_version=5
 config/name="Gamedev_jam"
 run/main_scene="uid://b5kij0eq6sefv"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://sprites/icon.svg"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[dotnet]
-
-project/assembly_name="Gamedev_jam"
 
 [input]
 

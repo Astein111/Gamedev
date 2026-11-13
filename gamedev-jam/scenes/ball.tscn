@@ -1,5 +1,26 @@
 [gd_scene format=3 uid="uid://rtdmfhcit2cp"]
 
-[node name="Node2D" type="Node2D" unique_id=321575471]
+[ext_resource type="Script" uid="uid://ojujlwuottoc" path="res://scripts/ball.gd" id="1_cxlvu"]
+[ext_resource type="Texture2D" uid="uid://decs4pdhcnwnu" path="res://Orb.png" id="2_cxlvu"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1969986671]
+[sub_resource type="CircleShape2D" id="CircleShape2D_800mr"]
+radius = 41.303753
+
+[node name="Node2D" type="Node2D" unique_id=587938593]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2146822051]
+collision_layer = 4
+script = ExtResource("1_cxlvu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2095498570]
+position = Vector2(2, -1)
+shape = SubResource("CircleShape2D_800mr")
+
+[node name="StallTimer" type="Timer" parent="CharacterBody2D" unique_id=1726385431]
+wait_time = 0.6
+one_shot = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=584255372]
+position = Vector2(2, -0.9999971)
+scale = Vector2(0.55140626, 0.5714286)
+texture = ExtResource("2_cxlvu")
