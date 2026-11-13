@@ -1,13 +1,15 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1794608381
-Orb.png::CompressedTexture2D::7445291667838513486::1794607615::1794607616::1::::<><><>0<>0<>4bf00a362b795e3c49436c564e07dc71<>res://.godot/imported/Orb.png-91b545d70c7e7cc7907c45701b809d0a.ctex::
-::res://scenes/::1794608361
-ball.tscn::PackedScene::1232637373211565655::1794607702::0::1::::<><><>0<>0<><>::uid://ojujlwuottoc::::res://scripts/ball.gd<>uid://decs4pdhcnwnu::::res://Orb.png
-chatrachter.tscn::PackedScene::2503019134005846118::1794608361::0::1::::<><><>0<>0<><>::uid://bj5hxch8vnoux::::res://sprites/icon.svg<>uid://envx0bgfny7m::::res://scripts/move.gd
-main.tscn::PackedScene::4513232898494022863::1794607414::0::1::::<><><>0<>0<><>::uid://bbwqmhrqqunco::::res://scenes/chatrachter.tscn<>uid://bj5hxch8vnoux::::res://sprites/icon.svg<>uid://rtdmfhcit2cp::::res://scenes/ball.tscn
-::res://scripts/::1794608361
-ball.gd::GDScript::1002454235390199842::1794607410::0::1::::<>CharacterBody2D<><>0<>0<><>::
-move.gd::GDScript::308909730371207012::1794608361::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://sprites/::1794607613
+::res://::1794609945
+::res://scenes/::1794610324
+ball.tscn::PackedScene::1232637373211565655::1794609945::0::1::::<><><>0<>0<><>::uid://ojujlwuottoc::::res://scripts/ball.gd<>uid://decs4pdhcnwnu::::res://sprites/Orb.png
+chatrachter.tscn::PackedScene::2503019134005846118::1794610324::0::1::::<><><>0<>0<><>::uid://bj5hxch8vnoux::::res://sprites/icon.svg<>uid://envx0bgfny7m::::res://scripts/move.gd
+main.tscn::PackedScene::4513232898494022863::1794609875::0::1::::<><><>0<>0<><>::uid://bbwqmhrqqunco::::res://scenes/chatrachter.tscn<>uid://bj5hxch8vnoux::::res://sprites/icon.svg<>uid://rtdmfhcit2cp::::res://scenes/ball.tscn
+::res://scripts/::1794611142
+ball.gd::GDScript::1002454235390199842::1794610158::0::1::::<>CharacterBody2D<><>0<>0<><>::
+move.gd::GDScript::308909730371207012::1794610324::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Screenshot 2026-11-14 010452.png::CompressedTexture2D::8453388566544111620::1794611141::1794611142::1::::<><><>0<>0<>00d7ad8112170be83cb2b77d14f8d77b<>res://.godot/imported/Screenshot 2026-11-14 010452.png-8362cb34ca2a1bcd6b31a9fdb4874495.ctex::
+::res://sprites/::1794611158
+anim.png::CompressedTexture2D::481654705866626465::1794611158::1794611158::1::::<><><>0<>0<>e1a7e12b3d8a29fd04cdc41d58e6156d<>res://.godot/imported/anim.png-76511f45c7ea45eb720c438308a50142.ctex::
 Gemini_Generated_Image_z397cnz397cnz397-removebg-preview.png::CompressedTexture2D::2888851614903124447::1794601222::1794607412::1::::<><><>0<>0<>73a3a3fabd29de93451d7e7b10ef46b4<>res://.godot/imported/Gemini_Generated_Image_z397cnz397cnz397-removebg-preview.png-2b8f354bc9c0a411f1f0a1e173c64714.ctex::
 icon.svg::CompressedTexture2D::3080517818654654735::1794422849::1794607415::1::::<><><>0<>0<>a78432b1c55d9f0fe61893a6ef9ae8d9<>res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex::
+Orb.png::CompressedTexture2D::7445291667838513486::1794607615::1794609945::1::::<><><>0<>0<>7537c3dbe917b82f3430c1ffa7110b91<>res://.godot/imported/Orb.png-f68046d69d930d4913b1d1071350b088.ctex::

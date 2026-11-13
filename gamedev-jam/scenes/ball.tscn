@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rtdmfhcit2cp"]
 
 [ext_resource type="Script" uid="uid://ojujlwuottoc" path="res://scripts/ball.gd" id="1_cxlvu"]
-[ext_resource type="Texture2D" uid="uid://decs4pdhcnwnu" path="res://Orb.png" id="2_cxlvu"]
+[ext_resource type="Texture2D" uid="uid://decs4pdhcnwnu" path="res://sprites/Orb.png" id="2_cxlvu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_800mr"]
 radius = 41.303753
